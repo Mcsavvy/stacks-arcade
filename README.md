@@ -1,19 +1,21 @@
 # StacksArcade Game Items Marketplace
 
-[... previous content ...]
-
-### Enhanced Rental System
+### Enhanced Rental System V2
 - Set rental prices for items
 - Automatic rental payments in STX
 - Time-based rental periods
-- Automatic rental expiration
-- Restrictions on rented items
+- Rental history tracking
+- Rental extension capability
+- Early rental termination
+- Improved security checks
 
 ### Rental Functions
 - `set-rental-price`: Set the rental price for an item
 - `rent-item`: Rent an item by paying the rental fee
-- `end-rental`: End an expired rental period
+- `extend-rental`: Extend an active rental period
+- `end-rental`: End an active rental period
 
 ## Error Codes
-[... previous error codes ...]
 - `ERR_INVALID_RENTAL` (u108): Invalid rental price or duration
+- `ERR_RENTAL_NOT_ACTIVE` (u109): No active rental found
+- `ERR_INVALID_EXTENSION` (u110): Invalid rental extension
